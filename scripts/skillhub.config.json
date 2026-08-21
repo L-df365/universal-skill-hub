@@ -1,0 +1,30 @@
+{
+  "scoreThreshold": 60,
+  "freePassUsage": 35,
+  "storeDir": "~/.skillhub/skills",
+  "scanDepth": 3,
+  "excludeDirs": [
+    ".git",
+    "node_modules",
+    ".Trash",
+    "backups",
+    ".agent-backups",
+    ".system"
+  ],
+  "forceInclude": [],
+  "forceExclude": [],
+  "deleteTrashDir": "~/.skillhub/trash",
+  "signalSources": {
+    "usage": [
+      "~/.agent-a/skill-usage.json",
+      "~/.agent-a/workspace/skills/.store_lock.json",
+      "~/.agent-b/.skill-lock.json",
+      "~/.agent-a/skills/.remote-meta.json"
+    ],
+    "install": [
+      "~/.agent-a/skills/.remote-meta.json",
+      "~/.agent-b/.skill-lock.json",
+      "~/.agent-a/workspace/skills/.store_lock.json"
+    ]
+  }
+}
